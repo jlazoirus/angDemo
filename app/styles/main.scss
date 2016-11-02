@@ -1,0 +1,175 @@
+// bower:scss
+// endbower
+$greylight: #2f323a;
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container {
+  float: right;
+  display: inline;
+  width: 80%;
+  margin-top: 25px;
+}
+
+/* Custom page header */
+.header {
+  margin-bottom: 0px;
+  color: #fff;
+  .navbar-default {
+    background-color: $greylight;
+    margin-bottom: 0px;
+    height: 61px;
+    border: none;
+    border-radius: 0;
+    .container-nav {
+      width: 100%;
+      .navbar-header {
+        width: 50%;
+        float: left;    
+      }
+      .navbar-collapse {
+        width: 50%;
+        float: right;    
+      }
+      .navbar-nav {
+        float: right;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        span {
+          margin-top: 15px;
+          display: inline-block;
+          a:hover {
+            text-decoration: none;
+          }
+        }
+        a {
+          color: #fff;
+          height: 61px;
+          padding: 19px;
+        }
+      }
+      .navbar-brand {
+        width: 264px;
+        height: 61px;
+        background-color: #1e2025;
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+.left-panel {
+  background-color: $greylight;
+  width: 264px;
+  //display: inline-block;
+  float: left;
+  height: 100%;
+  //position: absolute;
+  li, a {
+    list-style: none;
+    text-transform: capitalize;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #ffffff; 
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  li .active {
+    background-color: #1e2025;
+  }
+  li:first-child {
+    color: #575a5f;
+    border-bottom: 2px solid;
+    width: 180px;
+  }
+  li:last-child {
+    position: absolute;
+    bottom: 20%;
+  }
+}
+#lineChart {
+  max-width: 900px;
+  max-height: 262px;
+  display: inline-block;
+}
+#columnChart {
+  max-width: 680px;
+  max-height: 289px;
+  display: inline-block;
+}
+#pieChart {
+  max-width: 230px;
+  max-height: 290px;
+  display: inline-block;
+}
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen  and (max-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
